@@ -166,6 +166,7 @@ export const App: React.FC = () => {
             attemptsRemaining={attemptsRemaining}
             onAttemptUsed={handleAttemptUsed}
             onResetDemo={handleResetDemo}
+            hasExistingProgress={attemptsRemaining < 5 || Object.keys(answers).length > 0}
           />
         )}
 

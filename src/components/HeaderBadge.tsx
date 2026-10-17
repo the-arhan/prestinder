@@ -57,10 +57,10 @@ export const HeaderBadge: React.FC<HeaderBadgeProps> = ({ onReset, showResetButt
           onClick={() => setShowInfoModal(false)}
         >
           <div
-            className="w-full max-w-md bg-white rounded-2xl p-6 shadow-2xl border border-rose-100 relative text-stone-700"
+            className="w-full max-w-md paper-invitation p-6 text-stone-700 motion-reveal"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center gap-2 text-rose-900 font-semibold text-base mb-3">
+            <div className="flex items-center gap-2 text-rose-950 font-bold text-base mb-3">
               <ShieldCheck className="w-5 h-5 text-pink-600" />
               <span>Demo Boundary & Privacy</span>
             </div>
@@ -74,7 +74,7 @@ export const HeaderBadge: React.FC<HeaderBadgeProps> = ({ onReset, showResetButt
                   <strong className="text-stone-800">Strictly Fictional:</strong> No connection to real college IDs, student databases, Spotify, or external servers.
                 </li>
                 <li>
-                  <strong className="text-stone-800">Sample ID Gate:</strong> Use the fictional demo ID <code className="px-1.5 py-0.5 rounded bg-rose-50 text-pink-700 font-mono">51110307042</code>.
+                  <strong className="text-stone-800">Sample ID Gate:</strong> Use the fictional demo ID <code className="px-1.5 py-0.5 rounded bg-rose-50 text-pink-700 font-mono font-bold">51110307042</code>.
                 </li>
                 <li>
                   <strong className="text-stone-800">Local Only:</strong> All questionnaire selections live only in your current browser session.
@@ -89,7 +89,7 @@ export const HeaderBadge: React.FC<HeaderBadgeProps> = ({ onReset, showResetButt
               <button
                 type="button"
                 onClick={() => setShowInfoModal(false)}
-                className="px-4 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-medium cursor-pointer transition-colors focus-ring"
+                className="btn-primary text-xs py-2 px-4.5"
               >
                 Close
               </button>
